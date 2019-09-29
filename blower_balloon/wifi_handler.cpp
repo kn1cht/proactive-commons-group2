@@ -9,7 +9,7 @@ WifiHandler::WifiHandler() {
 
 bool WifiHandler::checkConnection() {
   Serial.print("Waiting for Wi-Fi connection");
-  for(int count = 0; count < 100; count++) {
+  for(int count = 0; count < 20; count++) {
     if (WiFi.status() == WL_CONNECTED) {
       Serial.println("\nConnected!");
       return true;

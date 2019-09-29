@@ -1,4 +1,3 @@
-#include <MQTT.h>
 #include <MQTTClient.h>
 #include <WiFi.h>
 
