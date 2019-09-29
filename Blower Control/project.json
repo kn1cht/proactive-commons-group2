@@ -1,0 +1,1455 @@
+{
+    "name": "Blower Control",
+    "components": [
+        {
+            "name": "/Main",
+            "graph": {
+                "connections": [
+                    {
+                        "fromId": "3ec49df9-96af-ef03-344e-51b0169f4826",
+                        "fromProperty": "Size",
+                        "toId": "4aced993-a5ee-0ab2-0a8b-7a17d58deb14",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "af8976ca-ae28-d025-ee5c-0d692b62c9e9",
+                        "fromProperty": "touch.release",
+                        "toId": "b0527597-f2ca-1607-1336-b41e806f9b58",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "af8976ca-ae28-d025-ee5c-0d692b62c9e9",
+                        "fromProperty": "touch.press",
+                        "toId": "b0527597-f2ca-1607-1336-b41e806f9b58",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "b0527597-f2ca-1607-1336-b41e806f9b58",
+                        "fromProperty": "Size",
+                        "toId": "af8976ca-ae28-d025-ee5c-0d692b62c9e9",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "57c25dea-6b61-7661-14f5-870b18600108",
+                        "fromProperty": "touch.release",
+                        "toId": "a008c355-f980-bc0e-7db3-579c86ab2871",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "57c25dea-6b61-7661-14f5-870b18600108",
+                        "fromProperty": "touch.press",
+                        "toId": "a008c355-f980-bc0e-7db3-579c86ab2871",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "a008c355-f980-bc0e-7db3-579c86ab2871",
+                        "fromProperty": "Size",
+                        "toId": "57c25dea-6b61-7661-14f5-870b18600108",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "9b4ea09e-c0ad-99ee-ec07-9b1c45e44f12",
+                        "fromProperty": "Size",
+                        "toId": "85918c6d-acf5-577e-f501-71a91501d4b0",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "85918c6d-acf5-577e-f501-71a91501d4b0",
+                        "fromProperty": "touch.release",
+                        "toId": "9b4ea09e-c0ad-99ee-ec07-9b1c45e44f12",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "85918c6d-acf5-577e-f501-71a91501d4b0",
+                        "fromProperty": "touch.press",
+                        "toId": "9b4ea09e-c0ad-99ee-ec07-9b1c45e44f12",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "4aced993-a5ee-0ab2-0a8b-7a17d58deb14",
+                        "fromProperty": "touch.press",
+                        "toId": "3ec49df9-96af-ef03-344e-51b0169f4826",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "4aced993-a5ee-0ab2-0a8b-7a17d58deb14",
+                        "fromProperty": "touch.release",
+                        "toId": "3ec49df9-96af-ef03-344e-51b0169f4826",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "3ec49df9-96af-ef03-344e-51b0169f4826",
+                        "fromProperty": "at-Hover",
+                        "toId": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "toProperty": "up"
+                    },
+                    {
+                        "fromId": "9b4ea09e-c0ad-99ee-ec07-9b1c45e44f12",
+                        "fromProperty": "at-Hover",
+                        "toId": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "toProperty": "down"
+                    },
+                    {
+                        "fromId": "a008c355-f980-bc0e-7db3-579c86ab2871",
+                        "fromProperty": "at-Hover",
+                        "toId": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "toProperty": "forward"
+                    },
+                    {
+                        "fromId": "b0527597-f2ca-1607-1336-b41e806f9b58",
+                        "fromProperty": "at-Hover",
+                        "toId": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "toProperty": "backward"
+                    },
+                    {
+                        "fromId": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "fromProperty": "command",
+                        "toId": "ffc99f52-a9be-34d8-afd5-efd96a336675",
+                        "toProperty": "command"
+                    },
+                    {
+                        "fromId": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "fromProperty": "command",
+                        "toId": "51153c72-893e-e761-e281-72c3a3bd1b1b",
+                        "toProperty": "command"
+                    },
+                    {
+                        "fromId": "51153c72-893e-e761-e281-72c3a3bd1b1b",
+                        "fromProperty": "formatted",
+                        "toId": "1f137734-e4e5-9454-8f5e-e66a065d738a",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "3ec49df9-96af-ef03-344e-51b0169f4826",
+                        "fromProperty": "Opacity",
+                        "toId": "4aced993-a5ee-0ab2-0a8b-7a17d58deb14",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "b0527597-f2ca-1607-1336-b41e806f9b58",
+                        "fromProperty": "Opacity",
+                        "toId": "af8976ca-ae28-d025-ee5c-0d692b62c9e9",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "a008c355-f980-bc0e-7db3-579c86ab2871",
+                        "fromProperty": "Opacity",
+                        "toId": "57c25dea-6b61-7661-14f5-870b18600108",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "9b4ea09e-c0ad-99ee-ec07-9b1c45e44f12",
+                        "fromProperty": "Opacity",
+                        "toId": "85918c6d-acf5-577e-f501-71a91501d4b0",
+                        "toProperty": "opacity"
+                    }
+                ],
+                "roots": [
+                    {
+                        "id": "2d3ccd33-f1ef-2dc5-3e1a-ca9d61cd222b",
+                        "type": "Group",
+                        "label": "Root",
+                        "x": -26,
+                        "y": 86,
+                        "parameters": {
+                            "fill": "parent"
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "fa90ea16-1232-0437-deea-5dd6263d8247",
+                                "type": "Rectangle",
+                                "label": "Background",
+                                "x": 20,
+                                "y": 61,
+                                "parameters": {
+                                    "color": "#222222"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "263b96c7-a914-feae-0b82-7eb943f657fc",
+                                "type": "Rectangle",
+                                "x": 20,
+                                "y": 122,
+                                "parameters": {
+                                    "height": {
+                                        "value": 10,
+                                        "unit": "%"
+                                    },
+                                    "color": "#000000"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "e2f78645-13a6-2664-1313-7c750324762a",
+                                "type": "Text",
+                                "version": 2,
+                                "x": 20,
+                                "y": 168,
+                                "parameters": {
+                                    "alignX": "center",
+                                    "y": 50,
+                                    "fontSize": 80,
+                                    "text": "Balloon Blower Controller"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "1f137734-e4e5-9454-8f5e-e66a065d738a",
+                                "type": "Text",
+                                "version": 2,
+                                "x": 18.48673455599652,
+                                "y": 311.530617760139,
+                                "parameters": {
+                                    "alignY": "center",
+                                    "y": -200,
+                                    "alignX": "center",
+                                    "text": "Command: ",
+                                    "fontSize": 80
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "d0bff88b-6093-994b-4b7a-12f36b5484c1",
+                                "type": "Group",
+                                "version": 2,
+                                "label": "Blower Button UP",
+                                "x": 20,
+                                "y": 122,
+                                "parameters": {},
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "4aced993-a5ee-0ab2-0a8b-7a17d58deb14",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 61,
+                                        "parameters": {
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "x": -390,
+                                            "color": "#EEEEEE"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "b85bdcdb-41db-64a2-05b9-8d7781ebb7f1",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 183,
+                                        "parameters": {
+                                            "alignY": "center",
+                                            "color": "#000000",
+                                            "text": "UP",
+                                            "x": -390,
+                                            "fontSize": 50,
+                                            "alignment": "center",
+                                            "fontFamily": "Helvetica",
+                                            "alignX": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "6220e0e2-f18e-aa0a-2814-8ed654699ce2",
+                                "type": "Group",
+                                "version": 2,
+                                "label": "Blower Button DOWN",
+                                "x": 20,
+                                "y": 290,
+                                "parameters": {
+                                    "rotationX": 0,
+                                    "x": 250
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "85918c6d-acf5-577e-f501-71a91501d4b0",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 61,
+                                        "parameters": {
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "x": -390,
+                                            "color": "#EEEEEE"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "0c1da8e3-479f-076b-9741-8653fca427f9",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 183,
+                                        "parameters": {
+                                            "alignY": "center",
+                                            "color": "#000000",
+                                            "text": "DOWN",
+                                            "x": -390,
+                                            "fontSize": 50,
+                                            "alignment": "center",
+                                            "fontFamily": "Helvetica",
+                                            "alignX": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "fb70d75b-fa29-0136-4e81-b7d385c16da8",
+                                "type": "Group",
+                                "version": 2,
+                                "label": "Blower Button FORWARD",
+                                "x": -6,
+                                "y": 544,
+                                "parameters": {
+                                    "rotationX": 0,
+                                    "x": 500
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "57c25dea-6b61-7661-14f5-870b18600108",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 61,
+                                        "parameters": {
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "x": -390,
+                                            "color": "#EEEEEE"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "0a452bd3-2552-2b82-5f07-aec0eb6bc38f",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 183,
+                                        "parameters": {
+                                            "alignY": "center",
+                                            "color": "#000000",
+                                            "text": "FORWARD",
+                                            "x": -390,
+                                            "fontSize": 35,
+                                            "alignment": "center",
+                                            "fontFamily": "Helvetica",
+                                            "alignX": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "id": "38a5a216-800c-326f-310c-81fc0d354bfc",
+                                "type": "Group",
+                                "version": 2,
+                                "label": "Blower Button BACKWARD",
+                                "x": 20,
+                                "y": 626,
+                                "parameters": {
+                                    "rotationX": 0,
+                                    "x": 750
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": [
+                                    {
+                                        "id": "af8976ca-ae28-d025-ee5c-0d692b62c9e9",
+                                        "type": "Circle",
+                                        "x": 20,
+                                        "y": 61,
+                                        "parameters": {
+                                            "alignX": "center",
+                                            "alignY": "center",
+                                            "x": -390,
+                                            "color": "#EEEEEE"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    },
+                                    {
+                                        "id": "e44e1ec5-8aee-3d25-ed5e-635860a35ba6",
+                                        "type": "Text",
+                                        "version": 2,
+                                        "x": 20,
+                                        "y": 183,
+                                        "parameters": {
+                                            "alignY": "center",
+                                            "color": "#000000",
+                                            "text": "BACKWARD",
+                                            "x": -390,
+                                            "fontSize": 35,
+                                            "alignment": "center",
+                                            "fontFamily": "Helvetica",
+                                            "alignX": "center"
+                                        },
+                                        "ports": [],
+                                        "dynamicports": [],
+                                        "children": []
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "ffc99f52-a9be-34d8-afd5-efd96a336675",
+                        "type": "Send Message",
+                        "x": 767.4128733816524,
+                        "y": 623.976882080902,
+                        "parameters": {
+                            "format": "json",
+                            "topic": "/balloon",
+                            "publishOnInputsChanged": true
+                        },
+                        "ports": [
+                            {
+                                "name": "command",
+                                "plug": "input",
+                                "type": {
+                                    "name": "*",
+                                    "allowConnectionOnly": true
+                                },
+                                "group": "Payload",
+                                "index": 1
+                            }
+                        ],
+                        "dynamicports": [],
+                        "children": []
+                    },
+                    {
+                        "id": "3ec49df9-96af-ef03-344e-51b0169f4826",
+                        "type": "States",
+                        "x": 304.4832331962784,
+                        "y": 306.5945607028603,
+                        "parameters": {
+                            "states": "Hover,None",
+                            "startState": "None",
+                            "values": "Size,Opacity",
+                            "value-None-Size": 200,
+                            "value-Hover-Size": 220,
+                            "value-Hover-Opacity": 1,
+                            "value-None-Opacity": 0.6
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Size",
+                                "index": 6
+                            },
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Opacity",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Size",
+                                "displayName": "Size",
+                                "editorName": "Hover|Size",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "Hover|Opacity",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Hover Transition",
+                                "name": "transition-Hover",
+                                "index": 10
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Hover Transition",
+                                "name": "duration-Hover",
+                                "index": 11
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Hover",
+                                "name": "to-Hover",
+                                "group": "Go to state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Hover",
+                                "name": "at-Hover",
+                                "group": "Current state",
+                                "index": 13
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Hover",
+                                "name": "reached-Hover",
+                                "group": "Current state",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Size",
+                                "displayName": "Size",
+                                "editorName": "None|Size",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "None|Opacity",
+                                "index": 16
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "None Transition",
+                                "name": "transition-None",
+                                "index": 17
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "None Transition",
+                                "name": "duration-None",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To None",
+                                "name": "to-None",
+                                "group": "Go to state",
+                                "index": 19
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At None",
+                                "name": "at-None",
+                                "group": "Current state",
+                                "index": 20
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached None",
+                                "name": "reached-None",
+                                "group": "Current state",
+                                "index": 21
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "Hover",
+                                        "None"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "Hover",
+                                "index": 22
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "b0527597-f2ca-1607-1336-b41e806f9b58",
+                        "type": "States",
+                        "x": 301.61616064074434,
+                        "y": 913.4462629547278,
+                        "parameters": {
+                            "states": "Hover,None",
+                            "startState": "None",
+                            "values": "Size,Opacity",
+                            "value-Hover-Size": 220,
+                            "value-None-Size": 200,
+                            "value-Hover-Opacity": 1,
+                            "value-None-Opacity": 0.6
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Size",
+                                "index": 6
+                            },
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Opacity",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Size",
+                                "displayName": "Size",
+                                "editorName": "Hover|Size",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "Hover|Opacity",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Hover Transition",
+                                "name": "transition-Hover",
+                                "index": 10
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Hover Transition",
+                                "name": "duration-Hover",
+                                "index": 11
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Hover",
+                                "name": "to-Hover",
+                                "group": "Go to state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Hover",
+                                "name": "at-Hover",
+                                "group": "Current state",
+                                "index": 13
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Hover",
+                                "name": "reached-Hover",
+                                "group": "Current state",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Size",
+                                "displayName": "Size",
+                                "editorName": "None|Size",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "None|Opacity",
+                                "index": 16
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "None Transition",
+                                "name": "transition-None",
+                                "index": 17
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "None Transition",
+                                "name": "duration-None",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To None",
+                                "name": "to-None",
+                                "group": "Go to state",
+                                "index": 19
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At None",
+                                "name": "at-None",
+                                "group": "Current state",
+                                "index": 20
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached None",
+                                "name": "reached-None",
+                                "group": "Current state",
+                                "index": 21
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "Hover",
+                                        "None"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "Hover",
+                                "index": 22
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "a008c355-f980-bc0e-7db3-579c86ab2871",
+                        "type": "States",
+                        "x": -253.49387905961788,
+                        "y": 792.5102580630665,
+                        "parameters": {
+                            "states": "Hover,None",
+                            "startState": "None",
+                            "values": "Size,Opacity",
+                            "value-Hover-Size": 220,
+                            "value-None-Size": 200,
+                            "value-Hover-Opacity": 1,
+                            "value-None-Opacity": 0.6
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Size",
+                                "index": 6
+                            },
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Opacity",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Size",
+                                "displayName": "Size",
+                                "editorName": "Hover|Size",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "Hover|Opacity",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Hover Transition",
+                                "name": "transition-Hover",
+                                "index": 10
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Hover Transition",
+                                "name": "duration-Hover",
+                                "index": 11
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Hover",
+                                "name": "to-Hover",
+                                "group": "Go to state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Hover",
+                                "name": "at-Hover",
+                                "group": "Current state",
+                                "index": 13
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Hover",
+                                "name": "reached-Hover",
+                                "group": "Current state",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Size",
+                                "displayName": "Size",
+                                "editorName": "None|Size",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "None|Opacity",
+                                "index": 16
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "None Transition",
+                                "name": "transition-None",
+                                "index": 17
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "None Transition",
+                                "name": "duration-None",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To None",
+                                "name": "to-None",
+                                "group": "Go to state",
+                                "index": 19
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At None",
+                                "name": "at-None",
+                                "group": "Current state",
+                                "index": 20
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached None",
+                                "name": "reached-None",
+                                "group": "Current state",
+                                "index": 21
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "Hover",
+                                        "None"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "Hover",
+                                "index": 22
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "9b4ea09e-c0ad-99ee-ec07-9b1c45e44f12",
+                        "type": "States",
+                        "x": -323.9625757163056,
+                        "y": 522.17177005102,
+                        "parameters": {
+                            "states": "Hover,None",
+                            "startState": "None",
+                            "values": "Size,Opacity",
+                            "value-Hover-Size": 220,
+                            "value-None-Size": 200,
+                            "value-Hover-Opacity": 1,
+                            "value-None-Opacity": 0.6
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Size",
+                                "index": 6
+                            },
+                            {
+                                "type": {
+                                    "name": "number",
+                                    "allowConnectionsOnly": true
+                                },
+                                "plug": "output",
+                                "group": "Values",
+                                "name": "Opacity",
+                                "index": 7
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Size",
+                                "displayName": "Size",
+                                "editorName": "Hover|Size",
+                                "index": 8
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "Hover Values",
+                                "name": "value-Hover-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "Hover|Opacity",
+                                "index": 9
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "Hover Transition",
+                                "name": "transition-Hover",
+                                "index": 10
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "Hover Transition",
+                                "name": "duration-Hover",
+                                "index": 11
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To Hover",
+                                "name": "to-Hover",
+                                "group": "Go to state",
+                                "index": 12
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At Hover",
+                                "name": "at-Hover",
+                                "group": "Current state",
+                                "index": 13
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached Hover",
+                                "name": "reached-Hover",
+                                "group": "Current state",
+                                "index": 14
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Size",
+                                "displayName": "Size",
+                                "editorName": "None|Size",
+                                "index": 15
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "group": "None Values",
+                                "name": "value-None-Opacity",
+                                "displayName": "Opacity",
+                                "editorName": "None|Opacity",
+                                "index": 16
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        {
+                                            "value": "easeOut",
+                                            "label": "Ease Out"
+                                        },
+                                        {
+                                            "value": "easeIn",
+                                            "label": "Ease In"
+                                        },
+                                        {
+                                            "value": "linear",
+                                            "label": "Linear"
+                                        },
+                                        {
+                                            "value": "easeInOut",
+                                            "label": "Ease In Out"
+                                        },
+                                        {
+                                            "value": "cubicBezier",
+                                            "label": "Cubic Bezier"
+                                        }
+                                    ]
+                                },
+                                "default": "easeOut",
+                                "displayName": "Easing Curve",
+                                "group": "None Transition",
+                                "name": "transition-None",
+                                "index": 17
+                            },
+                            {
+                                "plug": "input",
+                                "type": "number",
+                                "default": 300,
+                                "displayName": "Duration",
+                                "group": "None Transition",
+                                "name": "duration-None",
+                                "index": 18
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean",
+                                    "allowConnectionsOnly": true
+                                },
+                                "displayName": "To None",
+                                "name": "to-None",
+                                "group": "Go to state",
+                                "index": 19
+                            },
+                            {
+                                "plug": "output",
+                                "type": "boolean",
+                                "displayName": "At None",
+                                "name": "at-None",
+                                "group": "Current state",
+                                "index": 20
+                            },
+                            {
+                                "plug": "output",
+                                "type": "signal",
+                                "displayName": "Has Reached None",
+                                "name": "reached-None",
+                                "group": "Current state",
+                                "index": 21
+                            },
+                            {
+                                "plug": "input",
+                                "type": {
+                                    "name": "enum",
+                                    "enums": [
+                                        "Hover",
+                                        "None"
+                                    ]
+                                },
+                                "group": "States",
+                                "displayName": "Start at",
+                                "name": "startState",
+                                "default": "Hover",
+                                "index": 22
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "9859935c-7119-d051-2f68-5d6ba43e36bd",
+                        "type": "Javascript2",
+                        "x": 543.2990493721812,
+                        "y": 597.3170363229083,
+                        "parameters": {
+                            "code": "define({\n    inputs: {\n        up       : \"boolean\",\n        down     : \"boolean\",\n        forward  : \"boolean\",\n        backward : \"boolean\",\n    },\n    outputs: {\n       command : \"string\"\n    },\n    destroy: function(inputs, outputs) {\n\n    },\n    setup: function(inputs, outputs) {\n\n    },\n    run: function(inputs, outputs, changedInputs) {\n        let command = '';\n        command += inputs.up ? '1' : '0';\n        command += inputs.down ? '1' : '0';\n        command += inputs.forward ? '1' : '0';\n        command += inputs.backward ? '1' : '0';\n        console.log(command);\n        outputs.command = command;\n    }\n});",
+                            "up": false,
+                            "down": false
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "up",
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean"
+                                },
+                                "group": "Inputs",
+                                "index": 2
+                            },
+                            {
+                                "name": "down",
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean"
+                                },
+                                "group": "Inputs",
+                                "index": 3
+                            },
+                            {
+                                "name": "forward",
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean"
+                                },
+                                "group": "Inputs",
+                                "index": 4
+                            },
+                            {
+                                "name": "backward",
+                                "plug": "input",
+                                "type": {
+                                    "name": "boolean"
+                                },
+                                "group": "Inputs",
+                                "index": 5
+                            },
+                            {
+                                "name": "command",
+                                "type": {
+                                    "name": "string"
+                                },
+                                "plug": "output",
+                                "group": "Outputs",
+                                "index": 6
+                            }
+                        ],
+                        "children": []
+                    },
+                    {
+                        "id": "51153c72-893e-e761-e281-72c3a3bd1b1b",
+                        "type": "String Format",
+                        "x": 746.729911378992,
+                        "y": 377.0025099301666,
+                        "parameters": {
+                            "format": "Command: {command}"
+                        },
+                        "ports": [],
+                        "dynamicports": [
+                            {
+                                "name": "command",
+                                "type": "*",
+                                "plug": "input",
+                                "index": 2
+                            }
+                        ],
+                        "children": []
+                    }
+                ]
+            }
+        }
+    ],
+    "settings": {
+        "devices": "Default Device",
+        "Default Device.fillMode": "aspectFit",
+        "Default Device.canvasWidth": 1080,
+        "Default Device.canvasHeight": 1920,
+        "mqttUseExternalBroker": true,
+        "mqttBrokerUrl": "mqtt://ea4093ca:6ec47405301edcbf@broker.shiftr.io"
+    },
+    "rootNodeId": "2d3ccd33-f1ef-2dc5-3e1a-ca9d61cd222b",
+    "version": "1"
+}
