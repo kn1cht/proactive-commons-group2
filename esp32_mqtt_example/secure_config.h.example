@@ -1,0 +1,10 @@
+Rename this file to `secure_config.h` and remove this line.
+/******************************************************************************
+ * secure_config.h
+ *
+ * This file contains information need to be kept secure.
+ * Do NOT commit this file to Git repository.
+ *****************************************************************************/
+
+const char *ssid = "ssid";
+const char *pass = "pass";
