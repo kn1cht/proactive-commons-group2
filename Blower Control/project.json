@@ -164,7 +164,7 @@
                                 "x": 20,
                                 "y": 61,
                                 "parameters": {
-                                    "color": "#222222"
+                                    "color": "#1aaa54"
                                 },
                                 "ports": [],
                                 "dynamicports": [],
@@ -419,6 +419,31 @@
                                         "children": []
                                     }
                                 ]
+                            },
+                            {
+                                "id": "839388b8-52cc-0451-247a-02501b602967",
+                                "type": "HTML Content",
+                                "label": "Shiftr HTML",
+                                "x": 20,
+                                "y": 1382,
+                                "parameters": {
+                                    "html": "<!DOCTYPE html>\n<body>\n    <iframe\n      src=\"https://shiftr.io/kn1cht/esp32/embed?zoom=1\"\n      frameborder=\"0\"\n      width=\"100%\"\n      height=\"100%\">\n    </iframe>\n</body>\n",
+                                    "alignX": "left",
+                                    "alignY": "bottom",
+                                    "width": {
+                                        "value": 100,
+                                        "unit": "%"
+                                    },
+                                    "height": {
+                                        "value": 30,
+                                        "unit": "%"
+                                    },
+                                    "elementType": "div",
+                                    "sizeMode": "explicit"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
                             }
                         ]
                     },
