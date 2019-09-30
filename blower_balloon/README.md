@@ -4,5 +4,5 @@
 - Environment:[ Arduino core for ESP32](https://github.com/espressif/arduino-esp32)
 
 ## Required Libraries
-- [knolleary/pubsubclient](https://www.arduinolibraries.info/libraries/pub-sub-client)
+- [256dpi/arduino-mqtt](https://www.arduinolibraries.info/libraries/mqtt)
 - [bblanchon/ArduinoJson](https://www.arduinolibraries.info/libraries/arduino-json)
