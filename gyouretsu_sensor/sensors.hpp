@@ -23,7 +23,7 @@ double readDistanceSensor(int trigPin, int echoPin) {
 bool readGyouretsuMode(bool human, double distance) {
   humanSensorCounter.push((int)human);
   bool superhs = humanSensorCounter.get_average() >= 0.8; // 0.8以上なら人感センサーは通行人ではなく行列に反応
-  bool gyouretsu = superhs || (distance > 1 && distance < 300);
+  bool gyouretsu = superhs && (distance > 1 && distance < 300);
   return gyouretsu;
 }
 
