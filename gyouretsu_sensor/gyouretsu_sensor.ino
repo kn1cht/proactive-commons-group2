@@ -55,14 +55,25 @@ void loop() {
     double distance_1 = readDistanceSensor(trigPin_1, echoPin_1);
     delay(30); // avoid interference by ultrasonic sensors
     double distance_2 = readDistanceSensor(trigPin_2, echoPin_2);
-    double distance = max(distance_1, distance_2);
+    double distance = min(distance_1, distance_2);
     bool gyouretsuMode = readGyouretsuMode(humanSensorState, distance);
+
+   String retsuteido;
+   if (gyouretsuMode == 1 && distance < 120){
+     retsuteido = "long";
+     }else if (gyouretsuMode == 1 && distance >= 120) {
+     retsuteido = "short";
+   }else{retsuteido = "none";
+   }
 
     Serial.print("L: ");
     Serial.print(gyouretsuMode);
     Serial.print("\tD: ");
     Serial.println(distance);
+    Serial.print("\tStatus: ");
+    Serial.println(retsuteido);
     client.publish("/gyouretsu", String(gyouretsuMode));
+    client.publish("/gyouretsuStatus", String(retsuteido));
     client.publish("/distance", String(distance));
   }
 }
