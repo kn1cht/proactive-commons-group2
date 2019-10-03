@@ -17,12 +17,12 @@ double readDistanceSensor(int trigPin, int echoPin) {
   delayMicroseconds(10);
   digitalWrite(trigPin, LOW);
   double duration = pulseIn(echoPin, HIGH); // センサからの入力
-  return (duration > 0 && duration < 24000) ? duration / 29 / 2 : 0;
+  return (duration > 0 && duration < 24000) ? duration / 29 / 2 : 1e5;
 }
 
 bool readGyouretsuMode(bool human, double distance) {
   humanSensorCounter.push((int)human);
-  bool superhs = humanSensorCounter.get_average() >= 0.8; // 0.8以上なら人感センサーは通行人ではなく行列に反応
+  bool superhs = humanSensorCounter.get_average() >= 0.3 ; // 0.3以上なら人感センサーは通行人ではなく行列に反応
   bool gyouretsu = superhs && (distance > 1 && distance < 300);
   return gyouretsu;
 }

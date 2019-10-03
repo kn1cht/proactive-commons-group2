@@ -72,7 +72,7 @@ void loop() {
     Serial.println(distance);
     Serial.print("\tStatus: ");
     Serial.println(retsuteido);
-    client.publish("/gyouretsu", String(gyouretsuMode));
+    //client.publish("/gyouretsu", String(gyouretsuMode));
     client.publish("/gyouretsuStatus", String(retsuteido));
     client.publish("/distance", String(distance));
   }
