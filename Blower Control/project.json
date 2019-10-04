@@ -228,12 +228,6 @@
                         "toProperty": "opacity"
                     },
                     {
-                        "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
-                        "fromProperty": "at-Hover",
-                        "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
-                        "toProperty": "down"
-                    },
-                    {
                         "fromId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
                         "fromProperty": "touch.release",
                         "toId": "c321be29-b9a3-9642-401f-7072d12e99be",
@@ -256,12 +250,6 @@
                         "fromProperty": "Opacity",
                         "toId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
                         "toProperty": "opacity"
-                    },
-                    {
-                        "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
-                        "fromProperty": "at-Hover",
-                        "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
-                        "toProperty": "forward"
                     },
                     {
                         "fromId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
@@ -304,6 +292,18 @@
                         "fromProperty": "command",
                         "toId": "1eaa3d8c-14de-c0f3-c04d-e196b90994d0",
                         "toProperty": "command"
+                    },
+                    {
+                        "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
+                        "fromProperty": "at-Hover",
+                        "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
+                        "toProperty": "forward"
+                    },
+                    {
+                        "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
+                        "fromProperty": "at-Hover",
+                        "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
+                        "toProperty": "down"
                     }
                 ],
                 "roots": [
@@ -389,8 +389,8 @@
                     {
                         "id": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
                         "type": "States",
-                        "x": -128,
-                        "y": 285.5772093481596,
+                        "x": -62.86265230913159,
+                        "y": 268.2958722056843,
                         "parameters": {
                             "states": "Hover,None",
                             "startState": "None",
@@ -617,8 +617,8 @@
                     {
                         "id": "c321be29-b9a3-9642-401f-7072d12e99be",
                         "type": "States",
-                        "x": -55.49453796018972,
-                        "y": 484.0670223191048,
+                        "x": -39.54253444405876,
+                        "y": 493.3723577035146,
                         "parameters": {
                             "states": "Hover,None",
                             "startState": "None",
