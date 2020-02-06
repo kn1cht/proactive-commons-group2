@@ -1,0 +1,31 @@
+Drill report for /Users/RYK6U0327/Desktop/baloon-markII/baloon-markII.kicad_pcb
+Created on 2020 February 05, Wednesday 16:50:11
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'baloon-markII.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.40mm  0.016"  (2 holes)
+    T2  0.70mm  0.028"  (8 holes)
+    T3  0.75mm  0.030"  (12 holes)
+    T4  0.80mm  0.031"  (40 holes)
+    T5  0.85mm  0.033"  (18 holes)
+    T6  1.04mm  0.041"  (38 holes)
+    T7  1.20mm  0.047"  (3 holes)
+    T8  1.30mm  0.051"  (12 holes)
+
+    Total plated holes count 133
+
+
+Not plated through holes are merged with plated holes
+    unplated through holes:
+    =============================================================
+    T9  3.20mm  0.126"  (4 holes)
+    T10  3.50mm  0.138"  (1 hole)
+
+    Total unplated holes count 5

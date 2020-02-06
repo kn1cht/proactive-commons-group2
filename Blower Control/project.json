@@ -137,9 +137,9 @@
                                 "type": "HTML Content",
                                 "label": "Shiftr HTML",
                                 "x": 20,
-                                "y": 495,
+                                "y": 449,
                                 "parameters": {
-                                    "html": "<!DOCTYPE html>\n<body>\n    <iframe\n      src=\"https://shiftr.io/kn1cht/esp32/embed?zoom=1\"\n      frameborder=\"0\"\n      width=\"100%\"\n      height=\"100%\">\n    </iframe>\n</body>\n",
+                                    "html": "<!DOCTYPE html>\n<body>\n    <iframe\n      src=\"https://shiftr.io/kn1cht/esp32/embed?zoom=1\"\n      frameborder=\"0\"\n      width=\"100%\"\n      height=\"100%\"\n      style=\"transform: scale(0.5,0.5);\">\n    </iframe>\n</body>\n",
                                     "alignX": "left",
                                     "alignY": "bottom",
                                     "width": {
@@ -319,7 +319,7 @@
                         "dynamicports": [
                             {
                                 "name": "command",
-                                "type": "*",
+                                "type": "string",
                                 "plug": "input",
                                 "index": 2
                             }
@@ -1660,5 +1660,6 @@
         "mqttBrokerUrl": "mqtt://ea4093ca:6ec47405301edcbf@broker.shiftr.io"
     },
     "rootNodeId": "2d3ccd33-f1ef-2dc5-3e1a-ca9d61cd222b",
-    "version": "1"
+    "version": "1",
+    "metadata": {}
 }
