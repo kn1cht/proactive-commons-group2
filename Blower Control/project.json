@@ -115,7 +115,8 @@
                                         "value": 300,
                                         "unit": "px"
                                     },
-                                    "y": 750
+                                    "y": 750,
+                                    "x": -120
                                 },
                                 "ports": [],
                                 "dynamicports": [],
@@ -139,7 +140,7 @@
                                 "x": 20,
                                 "y": 449,
                                 "parameters": {
-                                    "html": "<!DOCTYPE html>\n<body>\n    <iframe\n      src=\"https://shiftr.io/kn1cht/esp32/embed?zoom=1\"\n      frameborder=\"0\"\n      width=\"100%\"\n      height=\"100%\"\n      style=\"transform: scale(0.5,0.5);\">\n    </iframe>\n</body>\n",
+                                    "html": "<!DOCTYPE html>\n<body>\n    <iframe\n      src=\"https://shiftr.io/kn1cht/esp32/embed?zoom=1\"\n      frameborder=\"0\"\n      width=\"100%\"\n      height=\"100%\"\n      style=\"transform: scale(1,1);\">\n    </iframe>\n</body>\n",
                                     "alignX": "left",
                                     "alignY": "bottom",
                                     "width": {
@@ -192,94 +193,10 @@
             "graph": {
                 "connections": [
                     {
-                        "fromId": "be337b44-d638-87c8-f678-2261c8954029",
-                        "fromProperty": "formatted",
-                        "toId": "5cc499a3-8131-1f36-ed38-d1c3250380d1",
-                        "toProperty": "text"
-                    },
-                    {
                         "fromId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
                         "fromProperty": "command",
                         "toId": "be337b44-d638-87c8-f678-2261c8954029",
                         "toProperty": "command"
-                    },
-                    {
-                        "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
-                        "fromProperty": "Size",
-                        "toId": "7f863054-8946-b3ec-1738-1473ba48bdef",
-                        "toProperty": "width"
-                    },
-                    {
-                        "fromId": "7f863054-8946-b3ec-1738-1473ba48bdef",
-                        "fromProperty": "touch.release",
-                        "toId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
-                        "toProperty": "to-None"
-                    },
-                    {
-                        "fromId": "7f863054-8946-b3ec-1738-1473ba48bdef",
-                        "fromProperty": "touch.press",
-                        "toId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
-                        "toProperty": "to-Hover"
-                    },
-                    {
-                        "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
-                        "fromProperty": "Opacity",
-                        "toId": "7f863054-8946-b3ec-1738-1473ba48bdef",
-                        "toProperty": "opacity"
-                    },
-                    {
-                        "fromId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
-                        "fromProperty": "touch.release",
-                        "toId": "c321be29-b9a3-9642-401f-7072d12e99be",
-                        "toProperty": "to-None"
-                    },
-                    {
-                        "fromId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
-                        "fromProperty": "touch.press",
-                        "toId": "c321be29-b9a3-9642-401f-7072d12e99be",
-                        "toProperty": "to-Hover"
-                    },
-                    {
-                        "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
-                        "fromProperty": "Size",
-                        "toId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
-                        "toProperty": "width"
-                    },
-                    {
-                        "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
-                        "fromProperty": "Opacity",
-                        "toId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
-                        "toProperty": "opacity"
-                    },
-                    {
-                        "fromId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
-                        "fromProperty": "at-Hover",
-                        "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
-                        "toProperty": "backward"
-                    },
-                    {
-                        "fromId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
-                        "fromProperty": "Size",
-                        "toId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
-                        "toProperty": "width"
-                    },
-                    {
-                        "fromId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
-                        "fromProperty": "touch.press",
-                        "toId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
-                        "toProperty": "to-Hover"
-                    },
-                    {
-                        "fromId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
-                        "fromProperty": "touch.release",
-                        "toId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
-                        "toProperty": "to-None"
-                    },
-                    {
-                        "fromId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
-                        "fromProperty": "Opacity",
-                        "toId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
-                        "toProperty": "opacity"
                     },
                     {
                         "fromId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
@@ -294,7 +211,115 @@
                         "toProperty": "command"
                     },
                     {
+                        "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
+                        "fromProperty": "Opacity",
+                        "toId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
+                        "fromProperty": "Size",
+                        "toId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
+                        "fromProperty": "touch.press",
+                        "toId": "c321be29-b9a3-9642-401f-7072d12e99be",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
+                        "fromProperty": "touch.release",
+                        "toId": "c321be29-b9a3-9642-401f-7072d12e99be",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
+                        "fromProperty": "Size",
+                        "toId": "66e4dfd8-365a-9251-5219-fdb840e87025",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
+                        "fromProperty": "Opacity",
+                        "toId": "66e4dfd8-365a-9251-5219-fdb840e87025",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "66e4dfd8-365a-9251-5219-fdb840e87025",
+                        "fromProperty": "touch.release",
+                        "toId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "66e4dfd8-365a-9251-5219-fdb840e87025",
+                        "fromProperty": "touch.press",
+                        "toId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
+                        "toProperty": "to-Hover"
+                    },
+                    {
                         "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
+                        "fromProperty": "Opacity",
+                        "toId": "7f863054-8946-b3ec-1738-1473ba48bdef",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "7f863054-8946-b3ec-1738-1473ba48bdef",
+                        "fromProperty": "touch.press",
+                        "toId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "7f863054-8946-b3ec-1738-1473ba48bdef",
+                        "fromProperty": "touch.release",
+                        "toId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
+                        "fromProperty": "Size",
+                        "toId": "7f863054-8946-b3ec-1738-1473ba48bdef",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
+                        "fromProperty": "Opacity",
+                        "toId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
+                        "toProperty": "opacity"
+                    },
+                    {
+                        "fromId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
+                        "fromProperty": "touch.release",
+                        "toId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
+                        "toProperty": "to-None"
+                    },
+                    {
+                        "fromId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
+                        "fromProperty": "touch.press",
+                        "toId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
+                        "toProperty": "to-Hover"
+                    },
+                    {
+                        "fromId": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
+                        "fromProperty": "Size",
+                        "toId": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
+                        "toProperty": "width"
+                    },
+                    {
+                        "fromId": "be337b44-d638-87c8-f678-2261c8954029",
+                        "fromProperty": "formatted",
+                        "toId": "5cc499a3-8131-1f36-ed38-d1c3250380d1",
+                        "toProperty": "text"
+                    },
+                    {
+                        "fromId": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
+                        "fromProperty": "at-Hover",
+                        "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
+                        "toProperty": "down"
+                    },
+                    {
+                        "fromId": "221e2ff3-64ae-f468-2942-28d4e10f531f",
                         "fromProperty": "at-Hover",
                         "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
                         "toProperty": "forward"
@@ -303,7 +328,7 @@
                         "fromId": "c321be29-b9a3-9642-401f-7072d12e99be",
                         "fromProperty": "at-Hover",
                         "toId": "b39bdcca-30fd-126b-48fc-8cacefbd2fee",
-                        "toProperty": "down"
+                        "toProperty": "backward"
                     }
                 ],
                 "roots": [
@@ -319,7 +344,7 @@
                         "dynamicports": [
                             {
                                 "name": "command",
-                                "type": "string",
+                                "type": "*",
                                 "plug": "input",
                                 "index": 2
                             }
@@ -389,8 +414,8 @@
                     {
                         "id": "5d3dd4fd-d3f2-4bbe-eb1c-6cd1db269c59",
                         "type": "States",
-                        "x": -62.86265230913159,
-                        "y": 268.2958722056843,
+                        "x": 534.9337252990296,
+                        "y": 170.07437106893258,
                         "parameters": {
                             "states": "Hover,None",
                             "startState": "None",
@@ -617,14 +642,14 @@
                     {
                         "id": "c321be29-b9a3-9642-401f-7072d12e99be",
                         "type": "States",
-                        "x": -39.54253444405876,
-                        "y": 493.3723577035146,
+                        "x": 506.32669384266217,
+                        "y": 739.756022522819,
                         "parameters": {
                             "states": "Hover,None",
                             "startState": "None",
                             "values": "Size,Opacity",
-                            "value-Hover-Size": 220,
-                            "value-None-Size": 200,
+                            "value-Hover-Size": 320,
+                            "value-None-Size": 300,
                             "value-Hover-Opacity": 1,
                             "value-None-Opacity": 0.6
                         },
@@ -845,14 +870,14 @@
                     {
                         "id": "221e2ff3-64ae-f468-2942-28d4e10f531f",
                         "type": "States",
-                        "x": 497.57873635704993,
-                        "y": 676.8517022518674,
+                        "x": 497.3766013124697,
+                        "y": 496.9057791708725,
                         "parameters": {
                             "states": "Hover,None",
                             "startState": "None",
                             "values": "Size,Opacity",
-                            "value-Hover-Size": 220,
-                            "value-None-Size": 200,
+                            "value-Hover-Size": 320,
+                            "value-None-Size": 300,
                             "value-Hover-Opacity": 1,
                             "value-None-Opacity": 0.6
                         },
@@ -1073,8 +1098,8 @@
                     {
                         "id": "420ba2cb-2d6f-726c-32bd-eb979be58bde",
                         "type": "States",
-                        "x": 500.44580891258397,
-                        "y": 70,
+                        "x": 530.9283437481275,
+                        "y": -85.7996224927785,
                         "parameters": {
                             "states": "Hover,None",
                             "startState": "None",
@@ -1347,15 +1372,15 @@
                                 "id": "5cc499a3-8131-1f36-ed38-d1c3250380d1",
                                 "type": "Text",
                                 "version": 2,
-                                "x": 176.01998940338268,
-                                "y": 13.920977599871264,
+                                "x": 20,
+                                "y": 61,
                                 "parameters": {
                                     "alignY": "center",
                                     "y": 0,
                                     "alignX": "right",
                                     "text": "Command: ",
                                     "fontSize": 56,
-                                    "x": -30,
+                                    "x": 210,
                                     "alignment": "center"
                                 },
                                 "ports": [],
@@ -1363,94 +1388,50 @@
                                 "children": []
                             },
                             {
-                                "id": "f73cc537-68c4-071a-ddb8-e657ffd7b4a5",
+                                "id": "bdd55b6d-4344-a4c1-9ee2-aa7a8f547e86",
                                 "type": "Group",
                                 "version": 2,
-                                "label": "Blower Button UP",
-                                "x": 176.01998940338268,
-                                "y": 110.92097759987126,
-                                "parameters": {},
-                                "ports": [],
-                                "dynamicports": [],
-                                "children": [
-                                    {
-                                        "id": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
-                                        "type": "Circle",
-                                        "x": 14,
-                                        "y": 473,
-                                        "parameters": {
-                                            "alignX": "center",
-                                            "alignY": "center",
-                                            "x": -390,
-                                            "color": "#EEEEEE"
-                                        },
-                                        "ports": [],
-                                        "dynamicports": [],
-                                        "children": []
-                                    },
-                                    {
-                                        "id": "14ab37df-37da-4446-bdd9-6a5421bd5578",
-                                        "type": "Text",
-                                        "version": 2,
-                                        "x": 14,
-                                        "y": 615,
-                                        "parameters": {
-                                            "alignY": "center",
-                                            "color": "#000000",
-                                            "text": "UP",
-                                            "x": -390,
-                                            "fontSize": 50,
-                                            "alignment": "center",
-                                            "fontFamily": "Helvetica",
-                                            "alignX": "center"
-                                        },
-                                        "ports": [],
-                                        "dynamicports": [],
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
-                                "id": "bc8f319d-1050-0145-95d9-7703bdb784be",
-                                "type": "Group",
-                                "version": 2,
-                                "label": "Blower Button DOWN",
-                                "x": 176.01998940338268,
-                                "y": 374.9209775998713,
+                                "label": "Blower Button ROTATERev",
+                                "x": 20,
+                                "y": 158,
                                 "parameters": {
                                     "rotationX": 0,
-                                    "x": 250
+                                    "x": 0
                                 },
                                 "ports": [],
                                 "dynamicports": [],
                                 "children": [
                                     {
-                                        "id": "7f863054-8946-b3ec-1738-1473ba48bdef",
+                                        "id": "66e4dfd8-365a-9251-5219-fdb840e87025",
                                         "type": "Circle",
-                                        "x": 14,
-                                        "y": 737,
+                                        "x": 20,
+                                        "y": 61,
                                         "parameters": {
                                             "alignX": "center",
                                             "alignY": "center",
                                             "x": -390,
-                                            "color": "#EEEEEE"
+                                            "color": "#EEEEEE",
+                                            "width": {
+                                                "value": 300,
+                                                "unit": "px"
+                                            }
                                         },
                                         "ports": [],
                                         "dynamicports": [],
                                         "children": []
                                     },
                                     {
-                                        "id": "84e15f61-0c5d-4485-fade-73f806f3961e",
+                                        "id": "6669128e-2590-e9e6-6a49-748184f80d08",
                                         "type": "Text",
                                         "version": 2,
-                                        "x": 14,
-                                        "y": 879,
+                                        "x": 20,
+                                        "y": 203,
                                         "parameters": {
                                             "alignY": "center",
                                             "color": "#000000",
-                                            "text": "DOWN",
+                                            "text": "回転1",
                                             "x": -390,
-                                            "fontSize": 50,
+                                            "fontSize": 44,
                                             "alignment": "center",
                                             "fontFamily": "Helvetica",
                                             "alignX": "center"
@@ -1466,8 +1447,8 @@
                                 "type": "Group",
                                 "version": 2,
                                 "label": "Blower Button ROTATE",
-                                "x": 176.01998940338268,
-                                "y": 638.920977599872,
+                                "x": 20,
+                                "y": 422,
                                 "parameters": {
                                     "rotationX": 0,
                                     "x": 500
@@ -1478,13 +1459,17 @@
                                     {
                                         "id": "1622b64e-82c3-ff9a-cb37-65cefe95b6d9",
                                         "type": "Circle",
-                                        "x": 14,
-                                        "y": 1001,
+                                        "x": 20,
+                                        "y": 61,
                                         "parameters": {
                                             "alignX": "center",
                                             "alignY": "center",
                                             "x": -390,
-                                            "color": "#EEEEEE"
+                                            "color": "#EEEEEE",
+                                            "width": {
+                                                "value": 300,
+                                                "unit": "px"
+                                            }
                                         },
                                         "ports": [],
                                         "dynamicports": [],
@@ -1494,12 +1479,12 @@
                                         "id": "da4c9390-6f52-e483-d2d9-94e47c7c084a",
                                         "type": "Text",
                                         "version": 2,
-                                        "x": 14,
-                                        "y": 1143,
+                                        "x": 20,
+                                        "y": 203,
                                         "parameters": {
                                             "alignY": "center",
                                             "color": "#000000",
-                                            "text": "ROTATE",
+                                            "text": "回転2",
                                             "x": -390,
                                             "fontSize": 44,
                                             "alignment": "center",
@@ -1511,6 +1496,105 @@
                                         "children": []
                                     }
                                 ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": "f73cc537-68c4-071a-ddb8-e657ffd7b4a5",
+                        "type": "Group",
+                        "version": 2,
+                        "label": "Blower Button UP",
+                        "x": 169.86320635194465,
+                        "y": 1193.434264185596,
+                        "parameters": {},
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "b913e9b1-64c2-957b-27d5-0bb2f69cdcbf",
+                                "type": "Circle",
+                                "x": 20,
+                                "y": 61,
+                                "parameters": {
+                                    "alignX": "center",
+                                    "alignY": "center",
+                                    "x": -390,
+                                    "color": "#EEEEEE"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "14ab37df-37da-4446-bdd9-6a5421bd5578",
+                                "type": "Text",
+                                "version": 2,
+                                "x": 20,
+                                "y": 203,
+                                "parameters": {
+                                    "alignY": "center",
+                                    "color": "#000000",
+                                    "text": "うえ",
+                                    "x": -390,
+                                    "fontSize": 50,
+                                    "alignment": "center",
+                                    "fontFamily": "Helvetica",
+                                    "alignX": "center"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            }
+                        ]
+                    },
+                    {
+                        "id": "bc8f319d-1050-0145-95d9-7703bdb784be",
+                        "type": "Group",
+                        "version": 2,
+                        "label": "Blower Button DOWN",
+                        "x": 462.3833086283465,
+                        "y": 1033.3760950154895,
+                        "parameters": {
+                            "rotationX": 0,
+                            "x": 250
+                        },
+                        "ports": [],
+                        "dynamicports": [],
+                        "children": [
+                            {
+                                "id": "7f863054-8946-b3ec-1738-1473ba48bdef",
+                                "type": "Circle",
+                                "x": 14,
+                                "y": 737,
+                                "parameters": {
+                                    "alignX": "center",
+                                    "alignY": "center",
+                                    "x": -390,
+                                    "color": "#EEEEEE"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
+                            },
+                            {
+                                "id": "84e15f61-0c5d-4485-fade-73f806f3961e",
+                                "type": "Text",
+                                "version": 2,
+                                "x": 20,
+                                "y": 203,
+                                "parameters": {
+                                    "alignY": "center",
+                                    "color": "#000000",
+                                    "text": "した",
+                                    "x": -390,
+                                    "fontSize": 50,
+                                    "alignment": "center",
+                                    "fontFamily": "Helvetica",
+                                    "alignX": "center"
+                                },
+                                "ports": [],
+                                "dynamicports": [],
+                                "children": []
                             }
                         ]
                     }
@@ -1654,12 +1738,11 @@
     "settings": {
         "devices": "Default Device",
         "Default Device.fillMode": "aspectFit",
-        "Default Device.canvasWidth": 1080,
-        "Default Device.canvasHeight": 1920,
+        "Default Device.canvasHeight": 2048,
         "mqttUseExternalBroker": true,
-        "mqttBrokerUrl": "mqtt://ea4093ca:6ec47405301edcbf@broker.shiftr.io"
+        "mqttBrokerUrl": "mqtt://ea4093ca:6ec47405301edcbf@broker.shiftr.io",
+        "Default Device.canvasWidth": 1536
     },
     "rootNodeId": "2d3ccd33-f1ef-2dc5-3e1a-ca9d61cd222b",
-    "version": "1",
-    "metadata": {}
+    "version": "1"
 }

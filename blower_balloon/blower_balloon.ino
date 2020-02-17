@@ -9,7 +9,7 @@ WiFiClient net;
 MQTTClient client;
 StaticJsonDocument<200> doc;
 
-const unsigned int blowerPin[4] = {4, 16, 17, 5};
+const unsigned int blowerPin[4] = {34, 35, 12, 13};
 
 void mqttConnect() {
   Serial.print("\nconnecting MQTT.");
